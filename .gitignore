@@ -33,3 +33,7 @@
 
 # Custom
 *.vs
+SoftwareFinalProject/SoftwareFinalProject.vcxproj.filters
+SoftwareFinalProject/SoftwareFinalProject.vcxproj
+SoftwareFinalProject/SoftwareFinalProject.sln
+SoftwareFinalProject/icon.rc
