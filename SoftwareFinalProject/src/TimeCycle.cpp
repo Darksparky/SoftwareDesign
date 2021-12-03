@@ -11,6 +11,7 @@ void TimeCycle::UpdateTimeCycle()
 	if (isStart) {
 		begin_time = clock();
 	}
+	//Here we will increase the minute varable based on the time since the last frame or tick if we implement ticks... 
 
 	if (minute >= 60)
 	{
