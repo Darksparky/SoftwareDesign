@@ -20,7 +20,8 @@ void TimeCycle::UpdateTimeCycle()
 		daysElapsed = 0;
 
 	}
-	//Here we will increase the minute varable based on the time since the last frame or tick if we implement ticks... 
+	//Here we will increase the minute varable based on the time since 
+	//the last frame or tick if we implement ticks... 
 
 	if (minute >= 60)
 	{
@@ -40,6 +41,7 @@ void TimeCycle::UpdateTimeCycle()
 	}
 
 };
+
 float TimeCycle::GetMinute() {
 	return minute;
 };
@@ -62,7 +64,6 @@ int TimeCycle::GetYear() {
 int TimeCycle::GetDaysElapsed() {
 	return daysElapsed;
 };
-
 /// <summary>
 /// This function executes all logic  that rely on counting hours.
 /// </summary>
