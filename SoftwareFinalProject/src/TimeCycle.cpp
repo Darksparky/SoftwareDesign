@@ -5,33 +5,100 @@
 #include <chrono>
 #include <ctime>
 #include <thread>
+#include "TimeCycle.h"
 
 void TimeCycle::UpdateTimeCycle()
 {
 	if (isStart) {
 		begin_time = clock();
+		isStart = false;
+		minute = 0;
+		hour = 0;
+		day = 1;
+		month = 1;
+		year = 1;
+		daysElapsed = 0;
+
 	}
 	//Here we will increase the minute varable based on the time since the last frame or tick if we implement ticks... 
 
 	if (minute >= 60)
 	{
-		minute = 0;
-		hour++;
+		ChangeHour();
 		if (hour > 23)
 		{
-			hour = 0;
-			day++;
+			ChangeDay();
 			if (day > 30)
 			{
-				day = 1;
-				month++;
-				if (month > 4) 
+				ChangeMonth();
+				if (month > 4)
 				{
-					month = 1;
-					year++;
+					ChangeYear();
 				}
 			}
 		}
 	}
 
+};
+float TimeCycle::GetMinute() {
+	return minute;
+};
+
+int TimeCycle::GetHour() {
+	return hour;
+};
+
+int TimeCycle::GetDay() {
+	return day;
+};
+
+int TimeCycle::GetMonth() {
+	return month;
+};
+
+int TimeCycle::GetYear() {
+	return year;
+};
+int TimeCycle::GetDaysElapsed() {
+	return daysElapsed;
+};
+
+/// <summary>
+/// This function executes all logic  that rely on counting hours.
+/// </summary>
+void TimeCycle::ChangeHour() {
+	//Internal Counting code
+	minute = 0;
+	hour++;
+	//External calls go here
+	//Call CropsManager::AddHour();
+	//call LightingFilter::UpdateLighting(Hour)
+};
+/// <summary>
+/// This function executes all logic  that rely on counting days.
+/// </summary>
+void TimeCycle::ChangeDay() {
+	//Internal Counting changes
+	hour = 0;
+	day++;
+	daysElapsed++;
+	//Any External calls go here
+};
+/// <summary>
+/// This function executes all logic  that rely on counting months.
+/// </summary>
+void TimeCycle::ChangeMonth() {
+	//Internal counting changes
+	day = 1;
+	month++;
+	//External calls go here
+};
+/// <summary>
+/// This function executes all logic  that rely on counting minutes.
+/// </summary>
+void TimeCycle::ChangeYear() {
+	//internal counting code
+	month = 1;
+	year++;
+	//any external calls go here
 }
