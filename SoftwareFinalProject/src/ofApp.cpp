@@ -28,19 +28,23 @@ void ofApp::update(){
 	if (keyDown['s'] == true)
 	{
 
-		player.Advance();
+		//player.Advance();
+		player.Advance(0, 2);
 		physics.Move(&player, 0, player.speed);
 	}
 	if (keyDown['a'] == true)
 	{
+		player.Advance(3, 5);
 		physics.Move(&player, -player.speed, 0);
 	}
 	if (keyDown['d'] == true)
 	{
+		player.Advance(6, 8);
 		physics.Move(&player, player.speed, 0);
 	}
 	if (keyDown['w'] == true)
 	{
+		player.Advance(9, 11);
 		physics.Move(&player, 0, -player.speed);
 	}
 

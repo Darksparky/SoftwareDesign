@@ -24,13 +24,13 @@ void AnimatedObject::Advance()
 void AnimatedObject::Advance(int firstFrame, int lastFrame)
 {
 
-	if (numFrames > 0)
+	if (numFrames > firstFrame)
 	{
 		currentFrame++;
 
-		if (currentFrame >= numFrames)
+		if (currentFrame >= lastFrame)
 		{
-			currentFrame = 0;
+			currentFrame = firstFrame;
 		}
 			
 	}
