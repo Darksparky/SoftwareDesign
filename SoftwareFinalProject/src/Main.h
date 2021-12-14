@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Scene.h"
 #include "TimeCycle.h"
 #include "Crops.h"
 #include "GrowthState.h"

@@ -40,6 +40,9 @@
     <ClCompile Include="src\Shop.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -81,6 +84,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\Shop.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
