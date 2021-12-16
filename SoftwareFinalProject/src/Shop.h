@@ -9,7 +9,12 @@ public:
 		int numItems;
 	};
 
+	Shop();
+	
+	Player player;
+	Items crop;
 
+	void setupShop();
 	bool Sell();
 };
 

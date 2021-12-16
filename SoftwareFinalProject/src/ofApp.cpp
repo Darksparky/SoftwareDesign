@@ -47,8 +47,6 @@ void ofApp::update(){
 		player.Advance(9, 11);
 		physics.Move(&player, 0, -player.speed);
 	}
-
-
 	if (keyDown['e'] == true)
 	{
 		player.Interaction(&player,&item);
