@@ -15,6 +15,9 @@ void Player::Interaction(Player*play,GameObject*obj)
 	//check if player is near object
 	if (a.collisionCheck(play,obj))
 	{
+		//check for what object is being interacted with
 		cout << "hello" << endl;
 	}
+
+
 }

@@ -10,7 +10,7 @@
 void TimeCycle::UpdateTimeCycle()
 {
 	if (isStart) {
-		begin_time = clock();
+		//begin_time = clock();
 		isStart = false;
 		minute = 0;
 		hour = 0;
