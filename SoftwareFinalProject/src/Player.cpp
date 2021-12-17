@@ -18,6 +18,4 @@ void Player::Interaction(Player*play,GameObject*obj)
 		//check for what object is being interacted with
 		cout << "hello" << endl;
 	}
-
-
 }
