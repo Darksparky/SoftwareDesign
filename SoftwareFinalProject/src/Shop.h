@@ -14,6 +14,7 @@ public:
 	Player player;
 	Items crop;
 
+	
 	//void setupShop();
 	bool Sell();
 };

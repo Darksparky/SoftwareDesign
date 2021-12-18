@@ -8,7 +8,7 @@ void Player::Water()
 {
 
 }
-void Player::Interaction(Player*play,GameObject*obj)
+void Player::ObjectInteraction(Player*play, GameObject*obj)
 {
 	Physics a;
 	
@@ -18,4 +18,9 @@ void Player::Interaction(Player*play,GameObject*obj)
 		//check for what object is being interacted with
 		cout << "hello" << endl;
 	}
+}
+
+void Player::DoorInteraction(Player*play, GameObject*obj)
+{
+
 }

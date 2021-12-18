@@ -49,7 +49,7 @@ void ofApp::update(){
 	}
 	if (keyDown['e'] == true)
 	{
-		player.Interaction(&player,&item);
+		player.ObjectInteraction(&player,&item);
 	}
 	
 }
