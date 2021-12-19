@@ -11,6 +11,6 @@ public:
 	void Harvest();
 	void Water();
 	void ObjectInteraction(Player*play, GameObject*obj);
-	void DoorInteraction(Player*play, GameObject*obj);
+	void DoorInteraction(Player*play, GameObject*obj, string doorName);
 };
 
