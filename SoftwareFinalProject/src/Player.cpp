@@ -20,7 +20,7 @@ void Player::ObjectInteraction(Player*play, GameObject*obj)
 	}
 }
 
-void Player::DoorInteraction(Player*play, GameObject*obj, Door doorName))
+void Player::DoorInteraction(Player*play, GameObject*obj, Door doorName)
 {
 switch ()
 {
