@@ -2,6 +2,7 @@
 class TimeCycle{
 private:
 	float minute;
+	float time;
 	int hour;
 	int day;
 	int month;

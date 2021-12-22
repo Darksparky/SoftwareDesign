@@ -1,6 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
+#include <iostream>
+#include <vector>
+#include <string>
 #include "GameObject.h"
 #include "AnimatedObject.h"
 #include "Player.h"

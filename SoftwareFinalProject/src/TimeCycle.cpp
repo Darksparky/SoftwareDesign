@@ -1,16 +1,10 @@
 #include "Main.h"
 //These need to be moved to the main one
-#include <iostream>
-#include <iomanip>
-#include <chrono>
-#include <ctime>
-#include <thread>
-#include "TimeCycle.h"
+
 
 void TimeCycle::UpdateTimeCycle()
 {
 	if (isStart) {
-		//begin_time = clock();
 		isStart = false;
 		minute = 0;
 		hour = 0;
@@ -23,6 +17,7 @@ void TimeCycle::UpdateTimeCycle()
 	//Here we will increase the minute varable based on the time since 
 	//the last frame or tick if we implement ticks... 
 
+	minute = minute + ofGetLastFrameTime();
 	if (minute >= 60)
 	{
 		ChangeHour();

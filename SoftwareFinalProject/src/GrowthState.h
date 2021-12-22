@@ -1,6 +1,5 @@
 #pragma once
-
-
+#include <vector>
 class GrowthState {
 private:
 	int timeElapsed;
@@ -18,5 +17,6 @@ public:
 };
 
 class CropsManager {
+	vector<Crop> crops;
 
 };
