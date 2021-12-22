@@ -3,6 +3,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 	player.setNumFrames(12);
+
+	//walkcycle
 	player.frames[0].load("FarmerWalking/FarmerWalkDown1.png");
 	player.frames[1].load("FarmerWalking/FarmerWalkDown2.png");
 	player.frames[2].load("FarmerWalking/FarmerWalkDown3.png");
@@ -15,6 +17,8 @@ void ofApp::setup(){
 	player.frames[9].load("FarmerWalking/FarmerWalkUp1.png");
 	player.frames[10].load("FarmerWalking/FarmerWalkUp2.png");
 	player.frames[11].load("FarmerWalking/FarmerWalkUp3.png");
+
+	//actions
 	ofSetFrameRate(40);
 
 	item.GetImage()->load("gold.png");
