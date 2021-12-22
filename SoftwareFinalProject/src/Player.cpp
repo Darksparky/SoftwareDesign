@@ -2,11 +2,11 @@
 
 void Player::Harvest()
 {
-
+	if(crop.isFarmable == true)
 }
 void Player::Water()
 {
-
+	if (crop.isFarmable == true && crop.growth != 1 )
 }
 void Player::ObjectInteraction(Player*play, GameObject*obj)
 {
