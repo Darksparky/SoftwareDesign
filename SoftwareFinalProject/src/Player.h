@@ -6,6 +6,7 @@ public:
 	int playerRotation;
 	bool shopInteraction;
 	
+	GrowthState growthstate;
 	//Tile tile
 
 	void Harvest();
