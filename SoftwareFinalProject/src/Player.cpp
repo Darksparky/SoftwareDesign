@@ -2,11 +2,17 @@
 
 void Player::Harvest()
 {
-	if(growthstate.GetCanBeHarvested() == true)
+	if (growthstate.GetCanBeHarvested() == true)
+	{
+		
+	}
 }
 void Player::Water()
 {
-	if (growthstate.GetCanBeHarvested() == true && crop.growth != 1 )
+	if (growthstate.GetCanBeHarvested() == true && growthstate.GetTimeElapsed != 1)
+	{
+
+	}
 }
 void Player::ObjectInteraction(Player*play, GameObject*obj)
 {
