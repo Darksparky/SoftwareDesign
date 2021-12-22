@@ -1,3 +1,4 @@
+#pragma once
 #include "Main.h"
 //These need to be moved to the main one
 
@@ -67,7 +68,7 @@ void TimeCycle::ChangeHour() {
 	minute = 0;
 	hour++;
 	//External calls go here
-	//Call CropsManager::AddHour();
+	CropsManager::AddHour();
 	//call LightingFilter::UpdateLighting(Hour)
 };
 /// <summary>
