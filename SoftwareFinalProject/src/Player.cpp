@@ -4,14 +4,14 @@ void Player::Harvest()
 {
 	if (growthstate.GetCanBeHarvested() == true)
 	{
-		
+		crops.getImage().clear;
 	}
 }
 void Player::Water()
 {
-	if (growthstate.GetCanBeHarvested() == true && growthstate.GetTimeElapsed != 1)
+	if (growthstate.GetCanBeHarvested() == true && growthstate.GetTimeElapsed != 1) // time elasped is temp
 	{
-
+		growthstate.GetTimeElapsed() -= 5;
 	}
 }
 void Player::ObjectInteraction(Player*play, GameObject*obj)
@@ -26,12 +26,3 @@ void Player::ObjectInteraction(Player*play, GameObject*obj)
 	}
 }
 
-void Player::DoorInteraction(Player*play, GameObject*obj, Door doorName)
-{
-switch ()
-{
-default:
-	break;
-	//ssss
-}
-}
