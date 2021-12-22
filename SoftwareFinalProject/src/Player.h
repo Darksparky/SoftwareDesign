@@ -7,6 +7,7 @@ public:
 	bool shopInteraction;
 	
 	GrowthState growthstate;
+	Crops crops;
 	//Tile tile
 
 	void Harvest();
