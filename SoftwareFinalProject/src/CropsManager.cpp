@@ -3,8 +3,17 @@ void CropsManager::AddCrop(Crop cropToAdd) {
 	crops.push_back(cropToAdd);
 };
 
-void CropsManager::RemoveCrop(Crop *cropToRemove) {
-	crops.erase(cropToRemove);
+void CropsManager::RemoveCrop(Crop cropToRemove) {
+	int counter = 0;
+	for (auto c = crops.begin(); c != crops.end(); ++c)
+	{
+		if (&c == cropToRemove)
+		{
+			crops.erase(crops.begin() + counter);
+			return;
+		}
+		counter++;
+	}
 	
 };
 
