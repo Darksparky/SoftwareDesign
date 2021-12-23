@@ -181,6 +181,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Crops.cpp" />
+    <ClCompile Include="src\CropsManager.cpp" />
     <ClCompile Include="src\GrowthState.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
@@ -195,6 +196,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Crops.h" />
+    <ClInclude Include="src\CropsManager.h" />
     <ClInclude Include="src\GrowthState.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\AnimatedObject.h" />

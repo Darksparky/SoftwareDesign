@@ -68,7 +68,7 @@ void TimeCycle::ChangeHour() {
 	minute = 0;
 	hour++;
 	//External calls go here
-	CropsManager::AddHour();
+	//CropsManager::AddHour();
 	//call LightingFilter::UpdateLighting(Hour)
 };
 /// <summary>

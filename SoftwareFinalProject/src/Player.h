@@ -6,8 +6,8 @@ public:
 	int playerRotation;
 	bool shopInteraction;
 	
-	GrowthState growthstate;
-	Crops crops;
+	//GrowthState growthstate;
+	//Crops crops;
 	//Tile tile
 
 
