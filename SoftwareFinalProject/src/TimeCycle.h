@@ -9,7 +9,7 @@ private:
 	int year;
 	int daysElapsed;
 	bool isStart = true;
-	const clock_t begin_time; 
+	//const clock_t begin_time; 
 	void ChangeHour();
 	void ChangeDay();
 	void ChangeMonth();
