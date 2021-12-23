@@ -6,6 +6,7 @@ GrowthState::GrowthState(int duration, std::string n, ofImage i, Crop parent) {
 	stateDuration = duration;
 	Name = n;
 	parentCrop = parent;
+	startTime = parentCrop.GetTimeAlive();
 }
 bool GrowthState::GetCanBeHarvested() {
 	return GetCanBeHarvested;
@@ -20,5 +21,6 @@ int GrowthState::GetStateDuration() {
 };
 
 void GrowthState::UpdateGrowthState() {
+	//called by the update function of the parent crop
 	
 };

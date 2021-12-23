@@ -17,7 +17,7 @@ public:
 	float GetTimeAlive();
 	void Harvest();
 	void Wither();
-	void RemovePlant();//reset the tile
+	void RemovePlant();
 	GrowthState GetCurrentGrowthState();
 	void Update();
 };
