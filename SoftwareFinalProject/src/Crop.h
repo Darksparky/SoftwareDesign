@@ -18,6 +18,7 @@ public:
 	void Harvest();
 	void Wither();
 	void RemovePlant();
+	bool GetIsAlive();
 	GrowthState GetCurrentGrowthState();
 	void Update();
 };

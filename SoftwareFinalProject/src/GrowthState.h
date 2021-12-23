@@ -2,20 +2,20 @@
 
 class GrowthState {
 private:
-	int startTime;
-	int timeElapsed;
-	int stateDuration;
-	bool canBeHarvested;
+	int startTime; //in hours
+	int timeElapsed; //in hours
+	int stateDuration; //in hours
+	bool canBeHarvested; // yes/no
 	ofImage stateImage;
 	std::string Name;
-	//Crop parentCrop;
 
 public:
 	GrowthState();
-	GrowthState(int duration, std::string n, ofImage i);
+	~GrowthState();
+	GrowthState(int duration, std::string n, ofImage i, int parentTimeAlive);
 	bool GetCanBeHarvested();
 	int GetTimeElapsed();
 	int GetStateDuration();
-	void UpdateGrowthState();
+	void UpdateGrowthState(int parentTimeAlive);
 };
 

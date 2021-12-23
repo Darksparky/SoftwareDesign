@@ -28,8 +28,11 @@ Crop::~Crop()
 void Crop::RemovePlant() {
 	//do action and tile related things idk how to do
 	//maybe it clears the image and deletes the instance
+		
 };
-
+bool Crop::GetIsAlive() {
+	return isAlive;
+}
 void Crop::Update() {
 	//check to see if the growth state grows
 	currentGrowthState.UpdateGrowthState();
