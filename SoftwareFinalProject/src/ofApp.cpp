@@ -20,7 +20,7 @@ void ofApp::setup(){
 
 	//actions
 	ofSetFrameRate(40);
-
+	myFont.load("Arial.ttf", 32);
 	item.GetImage()->load("gold.png");
 	cout << item.width << endl;
 	cout << item.height << endl;
@@ -94,8 +94,10 @@ void ofApp::draw(){
 	//obj.Draw();
 	ren.Draw(&item);
 	ren.Draw(&player);
-	map.drawMap();
-	myFont.drawString("YR: " + to_string(static_cast<int>(timeCycle.GetYear())) +" MON: "+ to_string(static_cast<int>(timeCycle.GetMonth())) +" DAY: " + to_string(static_cast<int>(timeCycle.GetDay())) + " HR: " + to_string(static_cast<int>(timeCycle.GetHour()))+ " MIN: " + to_string(static_cast<int>(timeCycle.GetMinute())), 30, 30);
+	myFont.drawString("YR: " + to_string(static_cast<int>(timeCycle.GetYear())) +" MON: "+
+		to_string(static_cast<int>(timeCycle.GetMonth())) +" DAY: " + to_string(static_cast<int>(timeCycle.GetDay())) + " HR: " + 
+		to_string(static_cast<int>(timeCycle.GetHour()))+ " MIN: " + to_string(static_cast<int>(timeCycle.GetMinute())), 30, 30);
+	//map.drawMap();
  }
 
 void ofApp::keyPressed(int key) {

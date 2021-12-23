@@ -4,15 +4,20 @@ void CropsManager::AddCrop(Crop cropToAdd) {
 };
 
 void CropsManager::RemoveCrop(Crop cropToRemove) {
-	int counter = 0;
+	
 	for (auto c = crops.begin(); c != crops.end(); ++c)
 	{
-		if (&c == cropToRemove)
+		
+		/*if (temp == cropToRemove)
 		{
-			crops.erase(crops.begin() + counter);
+			crops.erase(c);
 			return;
-		}
-		counter++;
+		}*/
+		/*if (std::find(crops.begin(), crops.end(), cropToRemove) != crops.end())
+		{
+			crops.erase(c);
+			return;
+		}*/
 	}
 	
 };

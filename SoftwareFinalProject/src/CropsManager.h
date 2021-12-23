@@ -8,6 +8,6 @@ public:
 	~CropsManager();
 	void AddCrop(Crop cropToAdd);
 	void AddHour();
-	void RemoveCrop(Crop *cropToRemove);
+	void RemoveCrop(Crop cropToRemove);
 	void UpdateCrops(); //calls the update function on each crop in the list;
 };
