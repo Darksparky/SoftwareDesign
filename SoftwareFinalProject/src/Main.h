@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include <iostream>
+#include <algorithm>
 #include <vector>
 #include <string>
 #include "GameObject.h"
