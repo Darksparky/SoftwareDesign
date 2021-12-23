@@ -11,6 +11,7 @@ private:
 	//Crop parentCrop;
 
 public:
+	GrowthState();
 	GrowthState(int duration, std::string n, ofImage i);
 	bool GetCanBeHarvested();
 	int GetTimeElapsed();

@@ -92,6 +92,8 @@ void ofApp::draw(){
 	//obj.Draw();
 	ren.Draw(&item);
 	ren.Draw(&player);
+	map.drawMap();
+
 }
 
 void ofApp::keyPressed(int key) {

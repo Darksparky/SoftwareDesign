@@ -13,6 +13,7 @@
 #include "CropsManager.h"
 #include "Shop.h"
 #include "TimeCycle.h"
+#include "Map.h"
 #include "Physics.h"
 #include "Render.h"
 #include "ofApp.h"

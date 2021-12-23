@@ -1,6 +1,10 @@
 #pragma once
 #include "Main.h"
 
+GrowthState::GrowthState()
+{
+
+}
 GrowthState::GrowthState(int duration, std::string n, ofImage i) {
 	stateImage = i;
 	stateDuration = duration;
@@ -9,7 +13,7 @@ GrowthState::GrowthState(int duration, std::string n, ofImage i) {
 	//startTime = parentCrop.GetTimeAlive();
 }
 bool GrowthState::GetCanBeHarvested() {
-	return GetCanBeHarvested;
+	return canBeHarvested;
 };
 
 int GrowthState::GetTimeElapsed() {

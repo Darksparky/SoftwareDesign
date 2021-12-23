@@ -21,12 +21,16 @@ Crop::Crop() {
 	//set up the growth states
 };
 
-Crop::RemovePlant() {
+Crop::~Crop()
+{
+
+}
+void Crop::RemovePlant() {
 	//do action and tile related things idk how to do
 	//maybe it clears the image and deletes the instance
 };
 
-Crop::Update() {
+void Crop::Update() {
 	//check to see if the growth state grows
 	currentGrowthState.UpdateGrowthState();
 	if (currentGrowthState.GetStateDuration() > 0) {

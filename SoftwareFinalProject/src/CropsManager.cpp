@@ -9,5 +9,5 @@ void CropsManager::RemoveCrop(Crop cropToRemove) {
 };
 
 void CropsManager::AddHour() {
-	for(auto c = crops.begin(); )
+	/*for(auto c = crops.begin(); )*/
 }
