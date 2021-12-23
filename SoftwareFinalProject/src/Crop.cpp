@@ -51,7 +51,7 @@ float Crop::GetTimeAlive()
 void Crop::Update()
 {
 	//check to see if the growth state grows
-	currentGrowthState.UpdateGrowthState();
+	currentGrowthState.UpdateGrowthState(timeAlive);
 	if (currentGrowthState.GetStateDuration() > 0)
 	{
 		//check to see the elapsed time is greater than or equal to the needed duration of the grow
