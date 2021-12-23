@@ -1,4 +1,3 @@
-#pragma once
 #include"Main.h"
 void CropsManager::AddCrop(Crop cropToAdd) {
 	crops.push_back(cropToAdd);
@@ -6,6 +5,7 @@ void CropsManager::AddCrop(Crop cropToAdd) {
 
 void CropsManager::RemoveCrop(Crop cropToRemove) {
 	crops.erase(cropToRemove);
+	
 };
 
 void CropsManager::AddHour() {

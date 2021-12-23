@@ -1,4 +1,4 @@
-#pragma once
+
 #include "Main.h"
 
 GrowthState::GrowthState()
