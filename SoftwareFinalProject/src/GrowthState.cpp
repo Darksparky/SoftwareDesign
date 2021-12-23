@@ -1,6 +1,7 @@
 #pragma once
 #include "Main.h"
 
+
 GrowthState::GrowthState(int duration, std::string n, ofImage i) {
 	stateImage = i;
 	stateDuration = duration;
