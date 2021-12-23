@@ -17,6 +17,7 @@ class ofApp : public ofBaseApp{
 		Render ren;
 		Map map;
 		Player player;
+		GrowthState g;
 		/*ofImage img;
 		int x;
 		int y;*/

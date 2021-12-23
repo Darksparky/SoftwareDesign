@@ -654,3 +654,8 @@ void Map::drawMap()
 		}
 	}
 }
+
+void Map::drawTile(ofImage)
+{
+
+}

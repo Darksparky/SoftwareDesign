@@ -10,6 +10,7 @@ public:
 	Crop crops;
 	//Tile tile
 
+	Player();
 
 	void Harvest();
 	void Water();
