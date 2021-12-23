@@ -8,10 +8,10 @@ private:
 	bool canBeHarvested;
 	ofImage stateImage;
 	std::string Name;
-	Crop parentCrop;
+	//Crop parentCrop;
 
 public:
-	GrowthState(int duration, std::string n, ofImage i, Crop parent);
+	GrowthState(int duration, std::string n, ofImage i);
 	bool GetCanBeHarvested();
 	int GetTimeElapsed();
 	int GetStateDuration();
