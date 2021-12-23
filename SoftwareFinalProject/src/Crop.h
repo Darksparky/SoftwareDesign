@@ -1,6 +1,7 @@
 #pragma once
 #include "Main.h"
-class Crop {
+class Crop
+{
 private:
 	//Tile parentTile;
 	float timeAlive;
