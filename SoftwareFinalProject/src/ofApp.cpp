@@ -56,6 +56,8 @@ void ofApp::update(){
 		player.ObjectInteraction(&player,&item);
 	}
 	
+	timeCycle.UpdateTimeCycle();
+
 }
 //void ofApp::Move(ofImage img)
 //{
@@ -93,8 +95,8 @@ void ofApp::draw(){
 	ren.Draw(&item);
 	ren.Draw(&player);
 	map.drawMap();
-
-}
+	myFont.drawString("YR: " + to_string(static_cast<int>(timeCycle.GetYear())) +" MON: "+ to_string(static_cast<int>(timeCycle.GetMonth())) +" DAY: " + to_string(static_cast<int>(timeCycle.GetDay())) + " HR: " + to_string(static_cast<int>(timeCycle.GetHour()))+ " MIN: " + to_string(static_cast<int>(timeCycle.GetMinute())), 30, 30);
+ }
 
 void ofApp::keyPressed(int key) {
 	keyDown[key] = true;

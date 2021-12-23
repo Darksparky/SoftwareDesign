@@ -22,5 +22,6 @@ public:
 	int GetMonth();
 	int GetYear();
 	int GetDaysElapsed();
-
+	TimeCycle();
+	~TimeCycle();
 };

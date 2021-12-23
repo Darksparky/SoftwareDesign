@@ -1,7 +1,14 @@
 #pragma once
 #include "Main.h"
 //These need to be moved to the main one
+TimeCycle::TimeCycle()
+{
 
+};
+
+TimeCycle::~TimeCycle() {
+
+};
 
 void TimeCycle::UpdateTimeCycle()
 {

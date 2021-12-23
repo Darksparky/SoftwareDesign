@@ -12,6 +12,7 @@ class ofApp : public ofBaseApp{
 		
 		ofTrueTypeFont myFont;
 		Physics physics;
+		TimeCycle timeCycle;
 		GameObject item;
 		Render ren;
 		Map map;
