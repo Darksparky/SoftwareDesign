@@ -20,7 +20,7 @@ void ofApp::setup(){
 
 	//actions
 	ofSetFrameRate(40);
-	myFont.load("Arial.ttf", 32);
+	myFont.load("Arial.ttf", 16);
 	item.GetImage()->load("gold.png");
 	cout << item.width << endl;
 	cout << item.height << endl;
@@ -31,7 +31,6 @@ void ofApp::update(){
 
 	if (keyDown['s'] == true)
 	{
-
 		//player.Advance();
 		player.Advance(0, 2);
 		physics.Move(&player, 0, player.speed);
@@ -55,7 +54,10 @@ void ofApp::update(){
 	{
 		player.ObjectInteraction(&player,&item);
 	}
-	
+	if (keyDown['t'] == true)
+	{
+		timeCycle.AddTime(5);
+	}
 	timeCycle.UpdateTimeCycle();
 
 }
@@ -96,7 +98,7 @@ void ofApp::draw(){
 	ren.Draw(&player);
 	myFont.drawString("YR: " + to_string(static_cast<int>(timeCycle.GetYear())) +" MON: "+
 		to_string(static_cast<int>(timeCycle.GetMonth())) +" DAY: " + to_string(static_cast<int>(timeCycle.GetDay())) + " HR: " + 
-		to_string(static_cast<int>(timeCycle.GetHour()))+ " MIN: " + to_string(static_cast<int>(timeCycle.GetMinute())), 30, 30);
+		to_string(static_cast<int>(timeCycle.GetHour()))+ " MIN: " + to_string(static_cast<int>(timeCycle.GetMinute())), 400, 30);
 	//map.drawMap();
  }
 
