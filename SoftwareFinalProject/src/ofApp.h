@@ -10,6 +10,7 @@ class ofApp : public ofBaseApp{
 
 		bool keyDown[255]; //all keys
 		
+		ofTrueTypeFont myFont;
 		Physics physics;
 		GameObject item;
 		Render ren;

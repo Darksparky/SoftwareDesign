@@ -4,7 +4,7 @@ void CropsManager::AddCrop(Crop cropToAdd) {
 	crops.push_back(cropToAdd);
 };
 
-void CropsManager::RemoveCrop(Crop cropToRemove) {
+void CropsManager::RemoveCrop(Crop *cropToRemove) {
 	crops.erase(cropToRemove);
 };
 
