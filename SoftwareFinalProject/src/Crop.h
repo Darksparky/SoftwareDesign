@@ -22,4 +22,4 @@ public:
 	bool GetIsAlive();
 	GrowthState GetCurrentGrowthState();
 	void Update();
-};
+	

@@ -24,4 +24,5 @@ public:
 	int GetDaysElapsed();
 	TimeCycle();
 	~TimeCycle();
+	void AddTime(int amount);
 };

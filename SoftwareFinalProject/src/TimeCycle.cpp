@@ -106,3 +106,13 @@ void TimeCycle::ChangeYear() {
 	year++;
 	//any external calls go here
 }
+
+void TimeCycle::AddTime(int amount) {
+	float newMin = minute + amount;
+	if (newMin >= 60) {
+		minute = 60;
+	}
+	else {
+		minute = newMin;
+	}
+}
