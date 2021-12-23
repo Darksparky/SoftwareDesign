@@ -1,18 +1,25 @@
 #include "Main.h"
 
+
+Player::Player()
+{
+	money = 0;
+}
+
 void Player::Harvest()
 {
-	/*if (growthstate.GetCanBeHarvested() == true)
+	if (growthstate.GetCanBeHarvested() == true)
 	{
-		crops.getImage().clear;
-	}*/
+		crops.RemovePlant();
+		money += 5;
+	}
 }
 void Player::Water()
 {
-	//if (growthstate.GetCanBeHarvested() == true && growthstate.GetTimeElapsed != 1) // time elasped is temp
-	//{
-	//	growthstate.GetTimeElapsed() -= 5;
-	//}
+	if (growthstate.GetCanBeHarvested() == true/* && crops.GetCurrentGrowthState()*/) // time elasped is temp
+	{
+		
+	}
 }
 void Player::ObjectInteraction(Player*play, GameObject*obj)
 {

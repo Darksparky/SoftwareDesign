@@ -1,4 +1,4 @@
-#include "Map.h"
+#include "Main.h"
 
 int TileMap[71][115] =
 {

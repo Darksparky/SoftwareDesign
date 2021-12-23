@@ -1,5 +1,5 @@
 #pragma once
-#include "Main.h"
+
 class CropsManager {
 private:
 	std::vector<Crop> crops;
