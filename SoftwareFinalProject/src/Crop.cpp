@@ -42,4 +42,5 @@ void Crop::Update() {
 			
 		}
 	}
+	canBeHarvested = currentGrowthState.GetCanBeHarvested();
 };
