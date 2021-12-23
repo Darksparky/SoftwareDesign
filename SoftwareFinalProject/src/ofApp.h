@@ -13,6 +13,7 @@ class ofApp : public ofBaseApp{
 		Physics physics;
 		GameObject item;
 		Render ren;
+		Map map;
 		Player player;
 		/*ofImage img;
 		int x;

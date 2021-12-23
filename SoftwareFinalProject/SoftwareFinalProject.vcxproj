@@ -180,9 +180,11 @@
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Crops.cpp" />
+    <ClCompile Include="src\Crop.cpp" />
+    <ClCompile Include="src\CropsManager.cpp" />
     <ClCompile Include="src\GrowthState.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Map.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
     <ClCompile Include="src\AnimatedObject.cpp" />
     <ClCompile Include="src\GameObject.cpp" />
@@ -194,8 +196,10 @@
     <ClCompile Include="src\TimeCycle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Crops.h" />
+    <ClInclude Include="src\Crop.h" />
+    <ClInclude Include="src\CropsManager.h" />
     <ClInclude Include="src\GrowthState.h" />
+    <ClInclude Include="src\Map.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\AnimatedObject.h" />
     <ClInclude Include="src\GameObject.h" />

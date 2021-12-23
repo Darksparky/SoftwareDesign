@@ -5,11 +5,11 @@ class Map
 {
 public:
 	Map();
-	~Map();
+	//~Map();
 
 	void loadMap(int arr[71][115]);
 	void drawMap();
-	void drawTile(ofImage);
+	void drawTile(ofImage); //this needs to be defined in the .cpp
 
 	int map[71][115];
 

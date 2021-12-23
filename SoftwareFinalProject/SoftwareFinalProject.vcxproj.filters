@@ -28,9 +28,6 @@
     <ClCompile Include="src\Render.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\Crops.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\GrowthState.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -41,6 +38,15 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Scene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CropsManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crop.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Map.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,9 +80,6 @@
     <ClInclude Include="src\Render.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\Crops.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\GrowthState.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -87,6 +90,15 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\Scene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CropsManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crop.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
