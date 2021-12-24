@@ -7,7 +7,7 @@ public:
 
 	void loadMap(int arr[71][115]);
 	void drawMap();
-	void drawTile(ofImage);
+	void drawTile(ofImage img);
 	
 
 	int width = 71;

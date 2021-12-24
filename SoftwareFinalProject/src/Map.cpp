@@ -229,10 +229,12 @@ void Map::loadMap(int arr [71][115])
 	}
 }
 
-void Map::drawTile(ofImage)
+void Map::drawTile(ofImage img)
 {
+	img.draw(0, 0);
 	if (TileMaps[71][115] == true)
 	{
+		
 		return drawMap();
 	}
 

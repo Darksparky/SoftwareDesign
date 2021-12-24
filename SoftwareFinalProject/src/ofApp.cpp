@@ -100,6 +100,7 @@ void ofApp::draw(){
 		to_string(static_cast<int>(timeCycle.GetMonth())) +" DAY: " + to_string(static_cast<int>(timeCycle.GetDay())) + " HR: " + 
 		to_string(static_cast<int>(timeCycle.GetHour()))+ " MIN: " + to_string(static_cast<int>(timeCycle.GetMinute())), 400, 30);
 	//map.drawMap();
+	map.drawMap();
  }
 
 void ofApp::keyPressed(int key) {
