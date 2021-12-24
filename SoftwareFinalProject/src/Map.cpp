@@ -228,7 +228,7 @@ void Map::loadMap(int arr [71][115])
 	}
 }
 
-void Map::drawMap()
+void Map::drawTile(ofImage)
 {
 	int type = 0;
 
@@ -653,4 +653,5 @@ void Map::drawMap()
 			}
 		}
 	}
+
 }
