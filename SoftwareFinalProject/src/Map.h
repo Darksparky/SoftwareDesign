@@ -6,8 +6,13 @@ class Map
 public:
 
 	void loadMap(int arr[71][115]);
-	void drawMap();
 	void drawTile(ofImage);
+
+	int width = 71;
+	int height = 115;
+	int numberOfTiles = 8165;
+
+	void returnTilePos();
 
 	int map[71][115];
 
