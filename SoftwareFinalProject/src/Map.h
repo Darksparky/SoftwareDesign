@@ -6,7 +6,9 @@ class Map
 public:
 
 	void loadMap(int arr[71][115]);
+	void drawMap();
 	void drawTile(ofImage);
+	
 
 	int width = 71;
 	int height = 115;
