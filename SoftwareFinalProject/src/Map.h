@@ -1,17 +1,17 @@
 #pragma once
+#include "ofMain.h"
 
 class Map
 {
 public:
-	Map();
-	//~Map();
 
 	void loadMap(int arr[71][115]);
 	void drawMap();
-	void drawTile(ofImage); //this needs to be defined in the .cpp
+	void drawTile(ofImage);
 
 	int map[71][115];
 
+	void loadTiles();
 	//Tiles
 	ofImage t1;
 	ofImage t2;
@@ -149,7 +149,5 @@ public:
 	ofImage t134;
 	ofImage t135;
 	ofImage t136;
-
-	
 
 };
